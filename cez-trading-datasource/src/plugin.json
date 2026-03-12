@@ -1,21 +1,30 @@
 {
   "type": "datasource",
   "name": "CEZ Trading",
-  "id": "cez-trading-datasource",
+  "id": "adambardzak-ceztrading-datasource",
   "info": {
-    "description": "CEZ Trading charting backend datasource",
+    "description": "Data source plugin for CEZ Trading energy market charting API with OAuth2 authentication",
     "author": {
-      "name": "CEZ Trading"
+      "name": "Adam Bardzak",
+      "url": "https://github.com/bardzakadam"
     },
+    "keywords": ["energy", "trading", "cez", "intraday"],
     "logos": {
       "small": "img/logo.svg",
       "large": "img/logo.svg"
     },
     "version": "1.0.0",
-    "updated": "2024-01-01"
+    "updated": "2026-03-12",
+    "links": [
+      {
+        "name": "GitHub",
+        "url": "https://github.com/bardzakadam/grafana-plugin"
+      }
+    ],
+    "screenshots": []
   },
   "dependencies": {
-    "grafanaVersion": "10.0.0",
+    "grafanaVersion": ">=10.0.0",
     "plugins": []
   },
   "routes": [

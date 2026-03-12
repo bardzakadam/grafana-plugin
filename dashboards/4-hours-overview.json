@@ -10,7 +10,7 @@
         {
           "name": "market",
           "type": "query",
-          "datasource": { "uid": "effoqxbinp79cd", "type": "cez-trading-datasource" },
+          "datasource": { "uid": "effoqxbinp79cd", "type": "adambardzak-ceztrading-datasource" },
           "query": "markets",
           "label": "Market",
           "refresh": 1,
@@ -29,13 +29,13 @@
       {
         "id": 1,
         "title": "Current Hour (now)",
-        "type": "cez-trading-panel",
+        "type": "adambardzak-ceztradingchart-panel",
         "gridPos": { "h": 12, "w": 12, "x": 0, "y": 0 },
-        "datasource": { "uid": "effoqxbinp79cd", "type": "cez-trading-datasource" },
+        "datasource": { "uid": "effoqxbinp79cd", "type": "adambardzak-ceztrading-datasource" },
         "targets": [
           {
             "refId": "A",
-            "datasource": { "uid": "effoqxbinp79cd", "type": "cez-trading-datasource" },
+            "datasource": { "uid": "effoqxbinp79cd", "type": "adambardzak-ceztrading-datasource" },
             "marketId": "$market",
             "deliveryDay": "$deliveryDay",
             "deliveryHour": "now",
@@ -53,13 +53,13 @@
       {
         "id": 2,
         "title": "now + 1",
-        "type": "cez-trading-panel",
+        "type": "adambardzak-ceztradingchart-panel",
         "gridPos": { "h": 12, "w": 12, "x": 12, "y": 0 },
-        "datasource": { "uid": "effoqxbinp79cd", "type": "cez-trading-datasource" },
+        "datasource": { "uid": "effoqxbinp79cd", "type": "adambardzak-ceztrading-datasource" },
         "targets": [
           {
             "refId": "A",
-            "datasource": { "uid": "effoqxbinp79cd", "type": "cez-trading-datasource" },
+            "datasource": { "uid": "effoqxbinp79cd", "type": "adambardzak-ceztrading-datasource" },
             "marketId": "$market",
             "deliveryDay": "$deliveryDay",
             "deliveryHour": "now+1",
@@ -77,13 +77,13 @@
       {
         "id": 3,
         "title": "now + 2",
-        "type": "cez-trading-panel",
+        "type": "adambardzak-ceztradingchart-panel",
         "gridPos": { "h": 12, "w": 12, "x": 0, "y": 12 },
-        "datasource": { "uid": "effoqxbinp79cd", "type": "cez-trading-datasource" },
+        "datasource": { "uid": "effoqxbinp79cd", "type": "adambardzak-ceztrading-datasource" },
         "targets": [
           {
             "refId": "A",
-            "datasource": { "uid": "effoqxbinp79cd", "type": "cez-trading-datasource" },
+            "datasource": { "uid": "effoqxbinp79cd", "type": "adambardzak-ceztrading-datasource" },
             "marketId": "$market",
             "deliveryDay": "$deliveryDay",
             "deliveryHour": "now+2",
@@ -101,13 +101,13 @@
       {
         "id": 4,
         "title": "now + 3",
-        "type": "cez-trading-panel",
+        "type": "adambardzak-ceztradingchart-panel",
         "gridPos": { "h": 12, "w": 12, "x": 12, "y": 12 },
-        "datasource": { "uid": "effoqxbinp79cd", "type": "cez-trading-datasource" },
+        "datasource": { "uid": "effoqxbinp79cd", "type": "adambardzak-ceztrading-datasource" },
         "targets": [
           {
             "refId": "A",
-            "datasource": { "uid": "effoqxbinp79cd", "type": "cez-trading-datasource" },
+            "datasource": { "uid": "effoqxbinp79cd", "type": "adambardzak-ceztrading-datasource" },
             "marketId": "$market",
             "deliveryDay": "$deliveryDay",
             "deliveryHour": "now+3",

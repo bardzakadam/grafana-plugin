@@ -1,21 +1,30 @@
 {
   "type": "panel",
   "name": "CEZ Trading Chart",
-  "id": "cez-trading-panel",
+  "id": "adambardzak-ceztradingchart-panel",
   "info": {
-    "description": "Intraday energy trading visualization with price, VWAP, bid/ask and volume",
+    "description": "Intraday energy trading chart with VWAP, bid/ask, cumulative volume, trades and drawing tools",
     "author": {
-      "name": "CEZ Trading"
+      "name": "Adam Bardzak",
+      "url": "https://github.com/bardzakadam"
     },
+    "keywords": ["energy", "trading", "cez", "chart", "intraday"],
     "logos": {
       "small": "img/logo.svg",
       "large": "img/logo.svg"
     },
-    "version": "1.1.0",
-    "updated": "2024-01-01"
+    "version": "1.0.0",
+    "updated": "2026-03-12",
+    "links": [
+      {
+        "name": "GitHub",
+        "url": "https://github.com/bardzakadam/grafana-plugin"
+      }
+    ],
+    "screenshots": []
   },
   "dependencies": {
-    "grafanaVersion": "10.0.0",
+    "grafanaVersion": ">=10.0.0",
     "plugins": []
   }
 }
