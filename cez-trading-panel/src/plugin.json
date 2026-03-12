@@ -1,0 +1,21 @@
+{
+  "type": "panel",
+  "name": "CEZ Trading Chart",
+  "id": "cez-trading-panel",
+  "info": {
+    "description": "Intraday energy trading visualization with price, VWAP, bid/ask and volume",
+    "author": {
+      "name": "CEZ Trading"
+    },
+    "logos": {
+      "small": "img/logo.svg",
+      "large": "img/logo.svg"
+    },
+    "version": "1.1.0",
+    "updated": "2024-01-01"
+  },
+  "dependencies": {
+    "grafanaVersion": "10.0.0",
+    "plugins": []
+  }
+}

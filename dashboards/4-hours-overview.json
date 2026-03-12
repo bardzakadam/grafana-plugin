@@ -1,0 +1,128 @@
+{
+  "dashboard": {
+    "title": "CEZ Trading - 4 Hours Overview",
+    "tags": ["cez", "trading"],
+    "timezone": "browser",
+    "refresh": "1m",
+    "time": { "from": "now-6h", "to": "now" },
+    "templating": {
+      "list": [
+        {
+          "name": "market",
+          "type": "query",
+          "datasource": { "uid": "effoqxbinp79cd", "type": "cez-trading-datasource" },
+          "query": "markets",
+          "label": "Market",
+          "refresh": 1,
+          "sort": 0
+        },
+        {
+          "name": "deliveryDay",
+          "type": "textbox",
+          "label": "Delivery Day",
+          "query": "",
+          "current": { "text": "", "value": "" }
+        }
+      ]
+    },
+    "panels": [
+      {
+        "id": 1,
+        "title": "Current Hour (now)",
+        "type": "cez-trading-panel",
+        "gridPos": { "h": 12, "w": 12, "x": 0, "y": 0 },
+        "datasource": { "uid": "effoqxbinp79cd", "type": "cez-trading-datasource" },
+        "targets": [
+          {
+            "refId": "A",
+            "datasource": { "uid": "effoqxbinp79cd", "type": "cez-trading-datasource" },
+            "marketId": "$market",
+            "deliveryDay": "$deliveryDay",
+            "deliveryHour": "now",
+            "dataType": "combined",
+            "useCache": true
+          }
+        ],
+        "options": {
+          "showVolume": true,
+          "showBidAsk": true,
+          "showVwap": true,
+          "showTrades": true
+        }
+      },
+      {
+        "id": 2,
+        "title": "now + 1",
+        "type": "cez-trading-panel",
+        "gridPos": { "h": 12, "w": 12, "x": 12, "y": 0 },
+        "datasource": { "uid": "effoqxbinp79cd", "type": "cez-trading-datasource" },
+        "targets": [
+          {
+            "refId": "A",
+            "datasource": { "uid": "effoqxbinp79cd", "type": "cez-trading-datasource" },
+            "marketId": "$market",
+            "deliveryDay": "$deliveryDay",
+            "deliveryHour": "now+1",
+            "dataType": "combined",
+            "useCache": true
+          }
+        ],
+        "options": {
+          "showVolume": true,
+          "showBidAsk": true,
+          "showVwap": true,
+          "showTrades": true
+        }
+      },
+      {
+        "id": 3,
+        "title": "now + 2",
+        "type": "cez-trading-panel",
+        "gridPos": { "h": 12, "w": 12, "x": 0, "y": 12 },
+        "datasource": { "uid": "effoqxbinp79cd", "type": "cez-trading-datasource" },
+        "targets": [
+          {
+            "refId": "A",
+            "datasource": { "uid": "effoqxbinp79cd", "type": "cez-trading-datasource" },
+            "marketId": "$market",
+            "deliveryDay": "$deliveryDay",
+            "deliveryHour": "now+2",
+            "dataType": "combined",
+            "useCache": true
+          }
+        ],
+        "options": {
+          "showVolume": true,
+          "showBidAsk": true,
+          "showVwap": true,
+          "showTrades": true
+        }
+      },
+      {
+        "id": 4,
+        "title": "now + 3",
+        "type": "cez-trading-panel",
+        "gridPos": { "h": 12, "w": 12, "x": 12, "y": 12 },
+        "datasource": { "uid": "effoqxbinp79cd", "type": "cez-trading-datasource" },
+        "targets": [
+          {
+            "refId": "A",
+            "datasource": { "uid": "effoqxbinp79cd", "type": "cez-trading-datasource" },
+            "marketId": "$market",
+            "deliveryDay": "$deliveryDay",
+            "deliveryHour": "now+3",
+            "dataType": "combined",
+            "useCache": true
+          }
+        ],
+        "options": {
+          "showVolume": true,
+          "showBidAsk": true,
+          "showVwap": true,
+          "showTrades": true
+        }
+      }
+    ]
+  },
+  "overwrite": true
+}

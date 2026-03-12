@@ -1,0 +1,41 @@
+{
+  "type": "datasource",
+  "name": "CEZ Trading",
+  "id": "cez-trading-datasource",
+  "info": {
+    "description": "CEZ Trading charting backend datasource",
+    "author": {
+      "name": "CEZ Trading"
+    },
+    "logos": {
+      "small": "img/logo.svg",
+      "large": "img/logo.svg"
+    },
+    "version": "1.0.0",
+    "updated": "2024-01-01"
+  },
+  "dependencies": {
+    "grafanaVersion": "10.0.0",
+    "plugins": []
+  },
+  "routes": [
+    {
+      "path": "api",
+      "url": "{{ .JsonData.apiUrl }}",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "content": "application/json"
+        }
+      ],
+      "tokenAuth": {
+        "url": "{{ .JsonData.tokenUrl }}",
+        "params": {
+          "grant_type": "client_credentials",
+          "client_id": "{{ .SecureJsonData.consumerKey }}",
+          "client_secret": "{{ .SecureJsonData.consumerSecret }}"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+- filtrovani nad vsemi grafy v dashboardu 
+- dynamicka hodnota hodiny

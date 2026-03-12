@@ -1,0 +1,44 @@
+{
+  "name": "cez-trading-panel",
+  "version": "1.0.0",
+  "description": "CEZ Trading Chart panel plugin for Grafana",
+  "scripts": {
+    "build": "webpack -c ./webpack.config.ts --env production",
+    "dev": "webpack -w -c ./webpack.config.ts --env development",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "lightweight-charts": "^5.1.0",
+    "lightweight-charts-line-tools-core": "github:difurious/lightweight-charts-line-tools-core",
+    "lightweight-charts-line-tools-fib-retracement": "github:difurious/lightweight-charts-line-tools-fib-retracement",
+    "lightweight-charts-line-tools-lines": "github:difurious/lightweight-charts-line-tools-lines",
+    "lightweight-charts-line-tools-parallel-channel": "github:difurious/lightweight-charts-line-tools-parallel-channel",
+    "lightweight-charts-line-tools-price-range": "github:difurious/lightweight-charts-line-tools-price-range",
+    "lightweight-charts-line-tools-rectangle": "github:difurious/lightweight-charts-line-tools-rectangle"
+  },
+  "devDependencies": {
+    "@grafana/data": "^10.0.0",
+    "@grafana/runtime": "^10.0.0",
+    "@grafana/schema": "^10.0.0",
+    "@grafana/ui": "^10.0.0",
+    "@swc/core": "^1.3.90",
+    "@types/react": "^18.2.0",
+    "copy-webpack-plugin": "^11.0.0",
+    "css-loader": "^6.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "style-loader": "^3.3.3",
+    "swc-loader": "^0.2.3",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.0",
+    "webpack": "^5.88.0",
+    "webpack-cli": "^5.1.0"
+  },
+  "peerDependencies": {
+    "@grafana/data": "^10.0.0",
+    "@grafana/runtime": "^10.0.0",
+    "@grafana/ui": "^10.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
